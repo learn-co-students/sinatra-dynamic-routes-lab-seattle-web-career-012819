@@ -64,6 +64,7 @@ describe App do
 
   describe 'GET /say/:word1/:word2/:word3/:word4/:word5' do
     it 'sends a 200 status code' do
+  
       get '/say/stop/rhyming/I/mean/it'
 
       expect(last_response.status).to eq(200)
